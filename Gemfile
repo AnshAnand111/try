@@ -61,3 +61,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+# Gemfile
+# Add this line for Redis integration
+gem 'redis', '~> 5.0'
