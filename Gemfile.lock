@@ -246,6 +246,10 @@ GEM
     rdoc (6.14.0)
       erb
       psych (>= 4.0.0)
+    redis (5.4.1)
+      redis-client (>= 0.22.0)
+    redis-client (0.25.2)
+      connection_pool
     regexp_parser (2.10.0)
     reline (0.6.1)
       io-console (~> 0.5)
@@ -279,13 +283,13 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
-    rubyzip (2.4.1)
+    rubyzip (3.0.1)
     securerandom (0.4.1)
-    selenium-webdriver (4.33.0)
+    selenium-webdriver (4.35.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
+      rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
     solid_cable (3.0.8)
       actioncable (>= 7.2)
@@ -369,6 +373,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)
+  redis (~> 5.0)
   rubocop-rails-omakase
   selenium-webdriver
   solid_cable
